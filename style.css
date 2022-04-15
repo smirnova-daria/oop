@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+.content__form {
+	flex: 0 0 20%;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+}
+label {
+	display: inline-block;
+}
+input,
+select {
+	margin-bottom: 15px;
+}
+input[type="text"],
+select {
+	max-width: 50%;
+}
+input[type="number"] {
+	max-width: 20%;
+}
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+.content__table {
+	flex: 0 0 50%;
+}
+.table {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+td,
+th {
+	border: 1px solid black;
+	padding: 5px 10px;
+}
+.input-group {
+	display: flex;
+	flex-direction: column;
+}
+.hidden {
+	display: none;
+}
+
+.checkbox {
+	flex-direction: row;
+}
