@@ -1,0 +1,87 @@
+body {
+	font-family: "Roboto";
+	font-size: 14px;
+	max-width: 1160px;
+	margin: 0 auto;
+	background-image: url(../img/pattern.png);
+	background-repeat: repeat;
+	color: #001069;
+}
+.content {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	margin: 30px 0;
+}
+h2 {
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	margin: 20px 0;
+}
+.content__form {
+	flex: 0 0 25%;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #ccc;
+	padding: 15px;
+	background-color: #feffe5;
+}
+label {
+	display: inline-block;
+	font-size: 16px;
+}
+input,
+select {
+	margin-bottom: 15px;
+}
+input[type="text"],
+select {
+	max-width: 50%;
+}
+input[type="number"] {
+	max-width: 20%;
+}
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+.content__table {
+	flex: 0 0 70%;
+}
+.table {
+	border-collapse: collapse;
+	background-color: #feffe5;
+	table-layout: fixed;
+	width: 100%;
+}
+td,
+th {
+	text-align: center;
+	word-wrap: break-word;
+	border-bottom: 1px solid #7ea8f8;
+	padding: 5px 10px;
+}
+th {
+	background-color: #7ea8f8;
+}
+tr:nth-child(even) {
+	background-color: #fdffca;
+}
+.input-group {
+	display: flex;
+	flex-direction: column;
+}
+.hidden {
+	display: none;
+}
+
+.checkbox {
+	flex-direction: row;
+}
