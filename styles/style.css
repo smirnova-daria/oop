@@ -100,7 +100,9 @@ input[type="submit"]:hover {
 input[type="checkbox"] {
 	cursor: pointer;
 }
-
+input[disabled] {
+	background-color: #ccc;
+}
 .content__table {
 	padding: 30px 0;
 }
