@@ -326,7 +326,7 @@ const renderTable = function (arr) {
 		const tr = document.createElement('tr')
 		tr.dataset.index = animal._id
 		tr.innerHTML = `<td>${translates[animal._type]}</td>
-					<td>${animal._name.toUpperCase()[0] + animal._name.toLowerCase().slice(1) || 'Безымянный'}</td>
+					<td>${animal._name ? animal._name.toUpperCase()[0] + animal._name.toLowerCase().slice(1) : 'Безымянный'}</td>
 					<td>${animal._isHomeless ? '&#10004;': '&#10008;'}</td>
 					<td>${animal._age}</td>
 					<td>${animal._breed || 'Не предусмотрено'}</td>
