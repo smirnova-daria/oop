@@ -37,7 +37,7 @@
 
 
 				<label for="age">Введите возраст животного (лет)</label>
-				<input type="number" name="age" id="age" required>
+				<input type="number" min="0" name="age" id="age" required>
 
 				<!-- Дополнительные/раскрывающиеся инпуты -->
 				<div class="hidden input-group breed">
@@ -47,7 +47,7 @@
 
 				<div class="hidden input-group size">
 					<label for="size">Размер (см)</label>
-					<input type="number" name="size" id="size">
+					<input type="number" min="0" name="size" id="size">
 				</div>
 
 				<div class="hidden input-group kind">
@@ -65,8 +65,8 @@
 					<label for="is-milk">Дает молоко</label>
 				</div>
 
-				<label for="description">Опишите симптомы, введите другую важную информацию и животном</label>
-				<textarea name="description" id="description" cols="30" rows="10" required></textarea>
+				<label for="description">Опишите симптомы, введите другую важную информацию о животном</label>
+				<textarea name="description" id="description" cols="20" rows="5" required></textarea>
 
 				<input type="submit" value="Добавить" id="submit">
 			</form>

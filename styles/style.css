@@ -8,8 +8,9 @@ body {
 	color: #001069;
 }
 .content {
-	display: flex;
-	justify-content: space-between;
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-between; */
 	padding-top: 20px;
 }
 h1 {
@@ -25,18 +26,17 @@ h2 {
 	margin: 20px 0;
 }
 .content__form {
-	flex: 0 0 25%;
+	max-width: 50%;
+	margin: 0 auto;
 }
 .form {
 	display: flex;
 	flex-direction: column;
 	border: 1px solid #ccc;
-	padding: 15px;
+	padding: 5px 25px;
 	background-color: #feffe5;
-}
-label {
-	display: inline-block;
-	font-size: 16px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 8px rgba(194, 194, 194, 0.5);
 }
 input,
 select {
@@ -44,16 +44,65 @@ select {
 }
 input[type="text"],
 select {
-	max-width: 50%;
+	max-width: 70%;
 }
 input[type="number"] {
-	max-width: 20%;
+	max-width: 30%;
 }
 input[type="checkbox"] {
 	margin-right: 10px;
 }
+
+label {
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+input,
+select {
+	padding: 5px 15px;
+	font-size: 14px;
+	background-color: #ffffff;
+	color: #001069;
+	border: 1px solid rgb(223, 223, 223);
+	border-radius: 50px;
+	box-shadow: 0px 0px 8px rgba(194, 194, 194, 0.5);
+}
+textarea {
+	font-size: 14px;
+	padding: 10px;
+	border: 1px solid rgb(223, 223, 223);
+	border-radius: 10px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+	box-shadow: 0px 0px 8px #3c8ef7ad;
+}
+
+input[type="submit"] {
+	font-weight: 700;
+	margin: 20px 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	cursor: pointer;
+	align-self: center;
+	padding: 10px 30px;
+	transition: all 0.3s ease 0s;
+}
+input[type="submit"]:hover {
+	border-color: transparent;
+	background-color: #8cbbfaad;
+	box-shadow: 0px 0px 8px #3c8ef7ad;
+}
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
 .content__table {
-	flex: 0 0 70%;
+	padding: 30px 0;
 }
 .table {
 	border-collapse: collapse;
@@ -68,11 +117,33 @@ th {
 	border-bottom: 1px solid #7ea8f8;
 	padding: 5px 10px;
 }
+th:last-child {
+	width: 10%;
+}
+th:nth-last-child(2) {
+	width: 20%;
+}
 th {
 	background-color: #7ea8f8;
 }
 tr:nth-child(even) {
 	background-color: #fdffca;
+}
+
+.delete-btn {
+	font-weight: 700;
+	padding: 10px;
+	width: 100%;
+	cursor: pointer;
+	color: #001069;
+	background-color: #fff;
+	box-shadow: 0px 0px 8px rgba(194, 194, 194, 0.5);
+	border-radius: 30px;
+	transition: all 0.3s ease 0s;
+}
+.delete-btn:hover {
+	box-shadow: 0px 0px 8px rgba(255, 0, 0, 0.5);
+	background-color: rgba(255, 0, 0, 0.5);
 }
 .input-group {
 	display: flex;
